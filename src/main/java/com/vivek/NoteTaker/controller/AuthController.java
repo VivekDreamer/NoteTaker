@@ -6,6 +6,7 @@ import com.vivek.NoteTaker.entity.JwtResponse;
 import com.vivek.NoteTaker.entity.User;
 import com.vivek.NoteTaker.security.JwtHelper;
 import com.vivek.NoteTaker.services.UserService;
+import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,7 +67,7 @@ public class AuthController {
     }
 
     @PostMapping("/signup")
-    public User createUser(@RequestBody UserDTO user){
+    public User createUser(@Valid @RequestBody UserDTO user){
        return userService.createUser(user);
     }
 

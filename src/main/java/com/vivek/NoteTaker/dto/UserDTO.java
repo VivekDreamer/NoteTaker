@@ -1,11 +1,9 @@
 package com.vivek.NoteTaker.dto;
 
 import com.vivek.NoteTaker.entity.Note;
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.OneToMany;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,8 +16,11 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserDTO {
+    @NotBlank(message = "name should not be blank")
     private String name;
+    @NotBlank(message = "password should not be blank")
     private String password;
+    @Email(message = "email should be valid")
     private String email;
     private List<Note> notes = new ArrayList<>();
 }
