@@ -1,4 +1,4 @@
-# NoteTaker APP
+# NoteTaker API
 
 NoteTaker API is a secure and scalable RESTful API that allows users to manage notes, share them with others, and search based on keywords.
 
@@ -9,6 +9,7 @@ NoteTaker API is a secure and scalable RESTful API that allows users to manage n
 - [API Endpoints](#api-endpoints)
   - [Authentication Endpoints](#authentication-endpoints)
   - [Note Endpoints](#note-endpoints)
+- [PreRequisite To Test With DB](#DB-Setup)
 
 ## Introduction
 
@@ -40,4 +41,8 @@ I chose Spring Boot for its ease of development, robustness, and wide community 
 - **DELETE /api/notes/:id:** Delete a note by ID for the authenticated user.
 - **POST /api/notes/:noteid/share?emailToShared=:email:** Share a note of noteid with another user for the authenticated user.
 - **GET /api/search?q=:query:** Search for notes based on keywords for the authenticated user.
+
+## DB-Setup
+- Create a db named as note_taker in PostgreSQL having username and password.
+
 
