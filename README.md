@@ -1,4 +1,4 @@
-# NoteTaker API
+# NoteTaker APP
 
 NoteTaker API is a secure and scalable RESTful API that allows users to manage notes, share them with others, and search based on keywords.
 
