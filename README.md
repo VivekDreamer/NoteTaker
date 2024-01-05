@@ -45,6 +45,7 @@ I chose Spring Boot for its ease of development, robustness, and wide community 
 ## DB-Setup
 - Create a db named as note_taker in PostgreSQL having username and password.
 - Just start the application locally and hit apis.
+- All urls are secured except signup and login. You have to login first, you will get a token and then, pass to all the request in header. Header key is Authorization and header value starts with 'Bearer ' followed by token value.
 - Just saw linkedin post, due to time constraint not able to  apply other functionality..This is completed in 3.5 hours.
 
 
