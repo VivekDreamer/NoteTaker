@@ -22,7 +22,7 @@ NoteTaker API is designed to provide users with the ability to create, read, upd
 - **Rate Limiting & Request Throttling:** Not Implemented
 - **Search Functionality:** Not used any Text indexing for high performance
 
-We chose Spring Boot for its ease of development, robustness, and wide community support. PostgreSQL was selected as the database for its relational capabilities. JWT provides a secure authentication mechanism. Text indexing is implemented for efficient note searches.
+I chose Spring Boot for its ease of development, robustness, and wide community support. PostgreSQL was selected as the database for its relational capabilities. JWT provides a secure authentication mechanism. Text indexing is implemented for efficient note searches.
 
 ## API Endpoints
 
